@@ -3,7 +3,7 @@ package Exercise_3;
 public class Point2D{
         private double x, y;
 
-        Point2D(double _x, double _y){
+        public Point2D(double _x, double _y){
             x = _x;
             y = _y;
         }
