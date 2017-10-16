@@ -3,7 +3,7 @@ package Exercise_4;
 public class Point3D extends Point2D{
     private double z;
 
-    Point3D(double _x, double _y, double _z){
+    public Point3D(double _x, double _y, double _z){
         super(_x, _y);
         z = _z;
     }
@@ -12,7 +12,7 @@ public class Point3D extends Point2D{
 
     public void setZ(double _z){ z = _z; }
 
-    double distance(Point3D _point){
+    public double distance(Point3D _point){
         double dX = x - _point.getX();
         double dY = y - _point.getY();
         double dZ = z - _point.getZ();
