@@ -17,12 +17,12 @@ public class Test {
         points.add(p1);
         points.add(p2);
 
-        System.out.println("1. Wczytaj punkt 3D\n" +
-                "2. Wyświetl wszystkie punkty\n" +
-                "3. Oblicz odległość\n" +
-                "4. Zakończ");
-
         while(true){
+            System.out.print("1. Wczytaj punkt 3D\n" +
+                    "2. Wyświetl wszystkie punkty\n" +
+                    "3. Oblicz odległość\n" +
+                    "4. Zakończ\n" +
+                    ">: ");
             try{
                 InputStreamReader rd = new InputStreamReader(System.in);
                 BufferedReader bfr = new BufferedReader(rd);
@@ -30,7 +30,16 @@ public class Test {
                 in = bfr.readLine();
             }catch (IOException e){e.printStackTrace();}
             if(in.equals("1")){
-                Point3D p = new Point3D(7,8,9);
+                double[] tab = new double[3];
+                try{
+                    InputStreamReader rd1 = new InputStreamReader(System.in);
+                    BufferedReader bfr1 = new BufferedReader(rd1);
+
+                    tab[0] = Double.parseDouble(bfr1.readLine());
+                    tab[1] = Double.parseDouble(bfr1.readLine());
+                    tab[2] = Double.parseDouble(bfr1.readLine());
+                }catch (IOException e){e.printStackTrace();}
+                Point3D p = new Point3D(tab[0],tab[1],tab[2]);
                 points.add(p);
             }else if(in.equals("2")){
                 for(Point3D point:points){
