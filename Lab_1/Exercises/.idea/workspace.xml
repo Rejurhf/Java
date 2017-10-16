@@ -362,15 +362,22 @@
       <option name="presentableId" value="Default" />
       <updated>1507544262408</updated>
       <workItem from="1507544265871" duration="1328000" />
+<<<<<<< HEAD:Laboratorium 1 PO/Exercises/.idea/workspace.xml
+      <workItem from="1507577381489" duration="9232000" />
+=======
       <workItem from="1507577381489" duration="8627000" />
       <workItem from="1507897044955" duration="785000" />
       <workItem from="1507898443396" duration="686000" />
       <workItem from="1507992722340" duration="9643000" />
       <workItem from="1508015102390" duration="27000" />
+>>>>>>> d66ec5371466aaf6940720ba7a554a6f8b5c0bcf:Lab_1/Exercises/.idea/workspace.xml
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD:Laboratorium 1 PO/Exercises/.idea/workspace.xml
+    <option name="totallyTimeSpent" value="10560000" />
+=======
     <option name="totallyTimeSpent" value="21096000" />
   </component>
   <component name="TodoView" selected-index="1">
@@ -381,6 +388,7 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+>>>>>>> d66ec5371466aaf6940720ba7a554a6f8b5c0bcf:Lab_1/Exercises/.idea/workspace.xml
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
@@ -394,7 +402,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD:Laboratorium 1 PO/Exercises/.idea/workspace.xml
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24791667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1830635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> d66ec5371466aaf6940720ba7a554a6f8b5c0bcf:Lab_1/Exercises/.idea/workspace.xml
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
