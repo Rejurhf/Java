@@ -76,7 +76,7 @@ class Matrix {
     }
 
     void mul(Matrix _matrix){
-        if(this.getRows() == _matrix.getRows() && this.getCols() == _matrix.getCols()){
+        if(this.getRows() == _matrix.getCols() && this.getCols() == _matrix.getRows()){
             int[][] tmpArray = new int[rows][cols];
             for(int i = 0; i < rows; i++){
                 for(int j = 0; j < cols; j++){
