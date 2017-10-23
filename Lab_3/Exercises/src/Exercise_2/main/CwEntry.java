@@ -6,8 +6,10 @@ public class CwEntry extends Entry{
     private Direction d;
 
 
-    public CwEntry(String _word, String _clue){
+    public CwEntry(String _word, String _clue, int x, int y){
         super(_word, _clue);
+        this.x = x;
+        this.y = y;
     }
 
     public int getX(){

@@ -1,7 +1,8 @@
+import en.Enum;
 import en.Enum.*;
 
 public class BoardCell {
-    private Status cellStatus;
+    private Status cellStatus = Status.DISABLE;
     private Direction cellDirection;
     private Place cellPlace;
     private String conntent;
