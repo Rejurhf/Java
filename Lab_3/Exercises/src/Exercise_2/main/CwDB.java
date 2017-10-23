@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class CwDB {
-    protected LinkedList<Entry> dict = new LinkedList<Entry>();
+    protected LinkedList<Entry> dict = new LinkedList<>();
 
     public CwDB(String filename){
         this.createDB(filename);
@@ -21,7 +21,9 @@ public class CwDB {
                 clue = in.nextLine();
                 this.add(word, clue);
             }
+            System.out.println("Plik został wczytany");
         }catch (FileNotFoundException e){e.printStackTrace();}
+
     }
 
     public void add(String word, String clue){
