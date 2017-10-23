@@ -1,3 +1,5 @@
+import en.Enum.*;
+
 public class CwEntry extends Entry{
     private int x;
     private int y;
@@ -7,8 +9,6 @@ public class CwEntry extends Entry{
     public CwEntry(String _word, String _clue){
         super(_word, _clue);
     }
-
-    public enum Direction{HORIZ, VERT}
 
     public int getX(){
         return this.x;
