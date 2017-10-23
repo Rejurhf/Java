@@ -46,8 +46,8 @@
           <file leaf-file-name="Crossword.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Exercise_2/main/Crossword.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+                <state relative-caret-position="140">
+                  <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -59,11 +59,11 @@
             <entry file="file://$PROJECT_DIR$/src/Exercise_2/main/InteliCwDB.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="280">
-                  <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+                  <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#170#171#0" expanded="true" />
-                    <element signature="e#201#202#0" expanded="true" />
+                    <element signature="e#195#196#0" expanded="true" />
+                    <element signature="e#226#227#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -88,8 +88,8 @@
           <file leaf-file-name="InteliCwDB.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Exercise_2/main/InteliCwDB.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                <state relative-caret-position="772">
+                  <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com.abc.xyz/Main.java" />
         <option value="$PROJECT_DIR$/src/Exercise_2/InteliCwDB.java" />
         <option value="$PROJECT_DIR$/src/Exercise_2/main/CwDB.java" />
-        <option value="$PROJECT_DIR$/src/Exercise_2/main/InteliCwDB.java" />
         <option value="$PROJECT_DIR$/src/Exercise_2/main/Crossword.java" />
+        <option value="$PROJECT_DIR$/src/Exercise_2/main/InteliCwDB.java" />
       </list>
     </option>
   </component>
@@ -403,12 +403,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508242219087</updated>
       <workItem from="1508242224482" duration="2829000" />
-      <workItem from="1508695679736" duration="16826000" />
+      <workItem from="1508695679736" duration="18628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19655000" />
+    <option name="totallyTimeSpent" value="21457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2568" y="-8" width="2576" height="1096" extended-state="6" />
@@ -556,8 +556,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercise_2/main/Crossword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="140">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -566,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercise_2/main/InteliCwDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="772">
+          <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
