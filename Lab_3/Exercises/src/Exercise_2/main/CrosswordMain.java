@@ -1,9 +1,8 @@
-import java.io.Console;
 import java.util.LinkedList;
 
-public class Crossword{
+public class CrosswordMain {
     public static void main(String[] argv){
-        InteliCwDB crosswordPuzzle = new InteliCwDB("src/Exercise_2/resources/Crossword.txt");
+        InteliCwDB crosswordPuzzle = new InteliCwDB("src/Exercise_2/resources/CrosswordMain.txt");
 
         LinkedList<Entry> wordsThatMatches = new LinkedList<>();
         wordsThatMatches = crosswordPuzzle.fileAll("ata");

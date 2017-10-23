@@ -3,8 +3,8 @@ public class Entry {
     private String clue;
 
     public Entry(String _word, String _clue){
-        word = _word;
-        clue = _clue;
+        this.word = _word;
+        this.clue = _clue;
     }
 
     public String getWord() {
