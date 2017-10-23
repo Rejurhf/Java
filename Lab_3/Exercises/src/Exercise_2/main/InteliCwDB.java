@@ -14,9 +14,8 @@ public class InteliCwDB extends CwDB{
         Matcher macher;
         for(Entry word:dict){
             macher = wordToFind.matcher(word.getWord());
-            if(macher.find()){
+            if(macher.find())
                 wordsSameAsPattern.add(word);
-            }
         }
 
         return wordsSameAsPattern;
@@ -49,8 +48,8 @@ public class InteliCwDB extends CwDB{
         int randNumInRange = rand.nextInt(sizeOfList);
         return wordsThatMatchesPattern.get(randNumInRange);
     }
-
+/*
     public void add(String word, String clue){
 
-    }
+    }*/
 }

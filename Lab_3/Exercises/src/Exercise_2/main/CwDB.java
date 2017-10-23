@@ -23,7 +23,6 @@ public class CwDB {
             }
             System.out.println("Plik został wczytany");
         }catch (FileNotFoundException e){e.printStackTrace();}
-
     }
 
     public void add(String word, String clue){
