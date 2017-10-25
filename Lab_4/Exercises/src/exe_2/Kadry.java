@@ -1,5 +1,8 @@
 package exe_2;
 
+import java.text.Collator;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class Kadry{
@@ -40,16 +43,11 @@ public class Kadry{
     }
 
     public void sortKadre(){
-        double tmpWyn;
-        int tmpIter = 0;
-        int tmpIndex;
-        Pracownik tmpPracownik;
-        while(tmpIter < kadra.size()){
-            tmpWyn = kadra.get(tmpIter).getWynBrutto();
-            for (int i = tmpIter; i < kadra.size(); i++) {
-
+        kadra.sort(new Comparator<Pracownik>() {
+            @Override
+            public int compare(Pracownik o1, Pracownik o2) {
+                return Double.compare(o1.getWynBrutto(), o2.getWynBrutto());
             }
-            ++tmpIter;
-        }
+        });
     }
 }
