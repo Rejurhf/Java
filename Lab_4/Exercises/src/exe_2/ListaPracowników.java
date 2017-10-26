@@ -10,7 +10,7 @@ public class ListaPracowników{
         PracownikEtatowy p1 = new PracownikEtatowy(
                 "56789012345", 1600);
         PracownikEtatowy p2 = new PracownikEtatowy(
-                "67890123456", 2000);
+                "67890123456", 2100);
 
         kadra.dodajPracownika(s1);
         kadra.dodajPracownika(s2);
@@ -32,7 +32,10 @@ public class ListaPracowników{
 
         System.out.println("Nieposortowana lista pracowników:");
         kadra.wyswietlKadre();
+<<<<<<< HEAD
 
+=======
+>>>>>>> e4d45d94b8de4d8f38cf2ae06b7acb535bb069a9
         System.out.println("Posortowana lista pracowników:");
         kadra.sortKadre();
         kadra.wyswietlKadre();

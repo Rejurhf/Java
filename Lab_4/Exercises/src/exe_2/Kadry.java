@@ -1,6 +1,10 @@
 package exe_2;
 
 import java.text.Collator;
+<<<<<<< HEAD
+=======
+import java.util.Collections;
+>>>>>>> e4d45d94b8de4d8f38cf2ae06b7acb535bb069a9
 import java.util.Comparator;
 import java.util.LinkedList;
 
@@ -42,6 +46,7 @@ public class Kadry{
     }
 
     public void sortKadre(){
+<<<<<<< HEAD
         /*
         kadra.sort(new Comparator<Pracownik>() {
             @Override
@@ -50,5 +55,13 @@ public class Kadry{
             }
         });*/
 
+=======
+        kadra.sort(new Comparator<Pracownik>() {
+            @Override
+            public int compare(Pracownik o1, Pracownik o2) {
+                return Double.compare(o1.getWynBrutto(), o2.getWynBrutto());
+            }
+        });
+>>>>>>> e4d45d94b8de4d8f38cf2ae06b7acb535bb069a9
     }
 }
