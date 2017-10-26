@@ -159,9 +159,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="173" />
     <option name="y" value="-16" />
+=======
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+>>>>>>> 80d8dfa7d11641e064782c9266af259cae5edf18
     <option name="width" value="1452" />
     <option name="height" value="717" />
   </component>
@@ -368,16 +373,41 @@
       <updated>1508841691507</updated>
       <workItem from="1508841697460" duration="5833000" />
       <workItem from="1508871200431" duration="141000" />
+<<<<<<< HEAD
+      <workItem from="1508947882665" duration="3697000" />
+=======
       <workItem from="1508947882665" duration="3638000" />
+<<<<<<< HEAD
       <workItem from="1509046236280" duration="13000" />
+=======
+>>>>>>> e4d45d94b8de4d8f38cf2ae06b7acb535bb069a9
+>>>>>>> 5237ba1748f8eaf822bbb676c727ab6df16422ab
+>>>>>>> 80d8dfa7d11641e064782c9266af259cae5edf18
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1096" extended-state="6" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="9671000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="7820000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2568" y="-8" width="2576" height="1096" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="9612000" />
+>>>>>>> 5237ba1748f8eaf822bbb676c727ab6df16422ab
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1452" height="717" extended-state="1" />
+>>>>>>> 80d8dfa7d11641e064782c9266af259cae5edf18
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
