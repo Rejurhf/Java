@@ -334,7 +334,7 @@
       <workItem from="1508841697460" duration="5833000" />
       <workItem from="1508871200431" duration="141000" />
       <workItem from="1508947882665" duration="3697000" />
-      <workItem from="1509046371287" duration="8000" />
+      <workItem from="1509046371287" duration="149000" />
     </task>
     <servers />
   </component>
@@ -345,6 +345,10 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1452" height="900" extended-state="0" />
 =======
+    <option name="totallyTimeSpent" value="9774000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1096" extended-state="6" />
 >>>>>>> 07dd37de6745e827ee6218d3a10382486939ae2c
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -358,6 +362,7 @@
 <<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44472682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 =======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44479167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
 >>>>>>> 07dd37de6745e827ee6218d3a10382486939ae2c
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
