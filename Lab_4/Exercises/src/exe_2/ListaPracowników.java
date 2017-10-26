@@ -32,5 +32,9 @@ public class ListaPracowników{
 
         System.out.println("Nieposortowana lista pracowników:");
         kadra.wyswietlKadre();
+
+        System.out.println("Posortowana lista pracowników:");
+        kadra.sortKadre();
+        kadra.wyswietlKadre();
     }
 }
