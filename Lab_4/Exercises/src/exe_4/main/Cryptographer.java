@@ -1,13 +1,18 @@
 package exe_4.main;
 
 import java.io.File;
+import java.util.Scanner;
 
 public class Cryptographer{
-    public static void cryptFile(File inFile, File outFile){
+    public void cryptFile(File inFile, File outFile, Algorithm algo){
 
     }
 
-    public static void decryptFile(File inFile, File outFile){
+    public void decryptFile(File inFile, File outFile, Algorithm algo){
 
+    }
+
+    protected String readFile(File inFile){
+        Scanner
     }
 }
