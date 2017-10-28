@@ -9,6 +9,7 @@ public class CodeMaker{
         File fileToSaveCrypt = new File(pathToResrc + "fileToSaveCript.txt");
         File fileToDecrypt = new File(pathToResrc + "fileToDecript.txt");
         File fileToSaveDecrypt = new File(pathToResrc + "fileToSaveDecript.txt");
-        
+
+
     }
 }
