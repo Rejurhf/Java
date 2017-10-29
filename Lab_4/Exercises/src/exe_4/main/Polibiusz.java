@@ -9,7 +9,7 @@ public class Polibiusz implements Algorithm{
 
     public String crypt(String wordToCrp){
         wordToCrp = wordToCrp.toLowerCase();
-        String crpWord = "";
+        StringBuilder crpWord = new StringBuilder();
 
         for(int i = 0; i < wordToCrp.length(); i++){
             char ch = wordToCrp.charAt(i);
@@ -22,23 +22,24 @@ public class Polibiusz implements Algorithm{
                     pos = ((j / 5 + 1) * 10) + (j % 5 + 1); //8 -> 23, 7/5+1=2 7%5+1=3
                 }
             }
-            crpWord += pos;
+            crpWord.append(pos);
         }
 
-        return crpWord;
+        return crpWord.toString();
     }
 
     public String decrypt(String wordToDecrp){
-        String decrpWord = "", number;
+        String number;
+        StringBuilder decrpWord = new StringBuilder();
         int rowNum = 0, colNum = 0;
 
         for(int i = 0; i < wordToDecrp.length()/2; i++){ //"123451" those are i=2 letters -> i=len/2
             number = wordToDecrp.substring(i*2,(i*2)+2); //"123451" cycle every 2 characters
             rowNum = Integer.parseInt(number) / 10 - 1; //23 -> 7(2nd row), 23/10-1=1
             colNum = Integer.parseInt(number) % 10 - 1; //23 -> 7(3rd col), 23%10-1=2
-            decrpWord += caseTab[(rowNum * 5) + colNum]; //*5 to go to next row
+            decrpWord.append(caseTab[(rowNum * 5) + colNum]); //*5 to go to next row
         }
 
-        return decrpWord;
+        return decrpWord.toString();
     }
 }

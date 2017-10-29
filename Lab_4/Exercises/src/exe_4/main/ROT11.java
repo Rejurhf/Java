@@ -5,7 +5,7 @@ public class ROT11 implements Algorithm{
     private static final int albhbtLen = 26;
 
     public String crypt(String wordToCrp){
-        String crpWord = "";
+        StringBuilder crpWord = new StringBuilder();
 
         for(int i = 0; i < wordToCrp.length(); i++) {
             char ch = wordToCrp.charAt(i);
@@ -13,21 +13,21 @@ public class ROT11 implements Algorithm{
                 else if(ch >= 'A' && ch <= 'O') ch += move;
                 else if(ch >= 'p' && ch <= 'z') ch -= albhbtLen - move;
                 else if(ch >= 'P' && ch <= 'Z') ch -= albhbtLen - move;
-            crpWord += ch;
+            crpWord.append(ch);
         }
-        return crpWord;
+        return crpWord.toString();
     }
 
     public String decrypt(String wordToDecrp){
-        String decrpWord = "";
+        StringBuilder decrpWord = new StringBuilder();
         for(int i = 0; i < wordToDecrp.length(); i++){
             char ch = wordToDecrp.charAt(i);
             if(ch >= 'a' && ch < 'k') ch += albhbtLen - move;
                 else if(ch >= 'A' && ch <= 'K') ch += albhbtLen - move;
                 else if(ch >= 'l' && ch < 'z') ch -= move;
                 else if(ch >= 'L' && ch <= 'Z') ch -= move;
-            decrpWord += ch;
+            decrpWord.append(ch);
         }
-        return decrpWord;
+        return decrpWord.toString();
     }
 }
