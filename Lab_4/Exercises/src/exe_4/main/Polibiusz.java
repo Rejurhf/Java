@@ -22,7 +22,7 @@ public class Polibiusz implements Algorithm{
                     pos = ((j / 5 + 1) * 10) + (j % 5 + 1); //8 -> 23, 7/5+1=2 7%5+1=3
                 }
             }
-            crpWord += pos + " ";
+            crpWord += pos;
         }
 
         return crpWord;
@@ -32,8 +32,8 @@ public class Polibiusz implements Algorithm{
         String decrpWord = "", number;
         int rowNum = 0, colNum = 0;
 
-        for(int i = 0; i < wordToDecrp.length()/3; i++){ //"12 34 51 " those are i=3 letters -> i=len/3
-            number = wordToDecrp.substring(i*3,(i*3)+2); //"12 34 51 " cycle every 3 characters
+        for(int i = 0; i < wordToDecrp.length()/2; i++){ //"123451" those are i=2 letters -> i=len/2
+            number = wordToDecrp.substring(i*2,(i*2)+2); //"123451" cycle every 2 characters
             rowNum = Integer.parseInt(number) / 10 - 1; //23 -> 7(2nd row), 23/10-1=1
             colNum = Integer.parseInt(number) % 10 - 1; //23 -> 7(3rd col), 23%10-1=2
             decrpWord += caseTab[(rowNum * 5) + colNum]; //*5 to go to next row
