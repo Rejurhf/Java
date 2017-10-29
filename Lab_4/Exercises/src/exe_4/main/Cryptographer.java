@@ -8,11 +8,36 @@ public class Cryptographer{
 
     public void cryptFile(String inFileName, String outFileName, Algorithm algo){
         String strToCrp = this.readFile(inFileName);
-        this.saveToFile(outFileName, strToCrp);
+
+        StringBuilder cryptedText = new StringBuilder();
+        String[] textLineByLine = strToCrp.split("\n");
+        for(String str:textLineByLine){
+            String[] lineWordByWord = str.split(" ");
+            for(String word:lineWordByWord){
+                cryptedText.append(algo.crypt(word));
+                cryptedText.append(" ");
+            }
+            cryptedText.append("\n");
+        }
+
+        this.saveToFile(outFileName, cryptedText.toString());
     }
 
     public void decryptFile(String inFileName, String outFileName, Algorithm algo){
+        String strToDecrp = this.readFile(inFileName);
 
+        StringBuilder decryptedText = new StringBuilder();
+        String[] textLineByLine = strToDecrp.split("\n");
+        for(String str:textLineByLine){
+            String[] lineWordByWord = str.split(" ");
+            for(String word:lineWordByWord){
+                decryptedText.append(algo.decrypt(word));
+                decryptedText.append(" ");
+            }
+            decryptedText.append("\n");
+        }
+
+        this.saveToFile(outFileName, decryptedText.toString());
     }
 
     private String readFile(String inFileName){
@@ -23,7 +48,8 @@ public class Cryptographer{
             Scanner inScan = new Scanner(inFile);
 
             while(inScan.hasNextLine()){
-                strBld.append(inScan.nextLine()).append("\n");
+                strBld.append(inScan.nextLine());
+                strBld.append("\n");
             }
             inScan.close();
         }catch (FileNotFoundException e){e.printStackTrace();}
