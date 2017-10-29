@@ -1,18 +1,33 @@
 package exe_4.main;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Cryptographer{
-    public void cryptFile(File inFile, File outFile, Algorithm algo){
+    private static final String pathToResrc = "src/exe_4/resources/";
+
+    public void cryptFile(String inFileName, String outFileName, Algorithm algo){
+        String strToCrp = this.readFile(inFileName);
+        System.out.println(strToCrp);
+    }
+
+    public void decryptFile(String inFileName, String outFileName, Algorithm algo){
 
     }
 
-    public void decryptFile(File inFile, File outFile, Algorithm algo){
+    protected String readFile(String inFileName){
+        StringBuilder strBld = new StringBuilder();
 
-    }
+        try{
+            File inFile = new File(pathToResrc + inFileName);
+            Scanner inScan = new Scanner(inFile);
 
-    protected String readFile(File inFile){
-        Scanner
+            while(inScan.hasNextLine()){
+                strBld.append(inScan.nextLine() + "\n");
+            }
+        }catch (FileNotFoundException e){e.printStackTrace();}
+
+        return strBld.toString();
     }
 }
