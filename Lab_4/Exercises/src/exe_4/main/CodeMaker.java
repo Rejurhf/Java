@@ -5,10 +5,9 @@ public class CodeMaker{
         Cryptographer crp = new Cryptographer();
         Algorithm rot11 = new ROT11();
         Algorithm polibiusz = new Polibiusz();
-        crp.cryptFile("fileToCrypt.txt", "fileToSaveCrypt.txt",rot11);
-        //File fileToDecrypt = new File("fileToDecrypt.txt");
-        //File fileToSaveDecrypt = new File("fileToSaveDecrypt.txt");
-
-
+        crp.cryptFile("fileToCryptROT11.txt", "fileToSaveCryptROT11.txt",rot11);
+        crp.cryptFile("fileToCryptPolibiusz.txt", "fileToSaveCryptPolibiusz.txt",polibiusz);
+        crp.decryptFile("fileToSaveCryptROT11.txt", "fileToSaveDecryptROT11.txt",rot11);
+        crp.decryptFile("fileToSaveCryptPolibiusz.txt", "fileToSaveDecryptPolibiusz.txt",polibiusz);
     }
 }

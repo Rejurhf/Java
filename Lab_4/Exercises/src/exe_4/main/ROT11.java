@@ -22,9 +22,9 @@ public class ROT11 implements Algorithm{
         StringBuilder decrpWord = new StringBuilder();
         for(int i = 0; i < wordToDecrp.length(); i++){
             char ch = wordToDecrp.charAt(i);
-            if(ch >= 'a' && ch < 'k') ch += albhbtLen - move;
+            if(ch >= 'a' && ch <= 'k') ch += albhbtLen - move;
                 else if(ch >= 'A' && ch <= 'K') ch += albhbtLen - move;
-                else if(ch >= 'l' && ch < 'z') ch -= move;
+                else if(ch >= 'l' && ch <= 'z') ch -= move;
                 else if(ch >= 'L' && ch <= 'Z') ch -= move;
             decrpWord.append(ch);
         }
