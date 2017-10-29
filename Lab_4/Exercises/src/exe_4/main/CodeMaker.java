@@ -1,7 +1,5 @@
 package exe_4.main;
 
-import java.io.File;
-
 public class CodeMaker{
     public static void main(String[] argv){
         Cryptographer crp = new Cryptographer();
