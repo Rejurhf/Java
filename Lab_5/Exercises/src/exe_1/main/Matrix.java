@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Matrix {
     private int rows, cols;
     private int[][] matrix;
-    private static final String pathToResrc = "src/exe_4/resources/";
+    private static final String pathToResrc = "src/exe_1/resources/";
 
     Matrix(int _rows, int _cols){
         rows = _rows;
@@ -24,25 +24,24 @@ class Matrix {
 
     Matrix(String pathToMatrixFile){
         StringBuilder strBld = new StringBuilder();
-        Scanner inScan;
-        BufferedReader bf;
+        Scanner inScan = null;
 
         try{
             File inFile = new File(pathToResrc + pathToMatrixFile);
             inScan = new Scanner(inFile);
-            FileReader fl = new FileReader(pathToResrc + pathToMatrixFile);
-            bf = new BufferedReader(fl);
 
-            while(bf.readLine() != null){
-                strBld.append(bf.readLine());
+            while(inScan.hasNext()){
+                strBld.append(inScan.nextLine());
                 strBld.append("\n");
             }
         }catch (IOException e){
             e.printStackTrace();
         }finally{
-            if(bf != null){
-                bf.close();
-            }
+            if(inScan != null){
+                inScan.close();
+                System.out.println("Zamknięte");
+            }else
+                System.out.println("Nie zamknięte");
         }
     }
 
