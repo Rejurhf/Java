@@ -4,9 +4,21 @@ import java.io.*;
 import java.util.Scanner;
 
 class Matrix {
-    private int rows, cols;
-    private int[][] matrix;
+    protected int rows, cols;
+    protected int[][] matrix;
     private static final String pathToResrc = "src/exe_1/resources/";
+
+    Matrix(){
+        rows = 0;
+        cols = 0;
+        matrix = new int[rows][cols];
+    }
+
+    Matrix(Matrix matrixToCopy){
+        this.rows = matrixToCopy.getRows();
+        this.cols = matrixToCopy.getCols();
+        this.copy(matrixToCopy.getValues());
+    }
 
     Matrix(int _rows, int _cols){
         rows = _rows;
@@ -45,7 +57,7 @@ class Matrix {
         }
     }
 
-    void copy(int[][] _array){
+    protected void copy(int[][] _array){
         for (int i = 0; i < rows; i++) {
             System.arraycopy(_array[i], 0, this.matrix[i], 0, cols);
         }
@@ -59,7 +71,7 @@ class Matrix {
         }
     }
 
-    void print(){
+    public void print(){
         for (int i = 0; i < rows; ++i){
             System.out.print("{");
             for (int j = 0; j < cols; j++) {
@@ -68,21 +80,26 @@ class Matrix {
             }
             System.out.println("}");
         }
+        System.out.println();
     }
 
-    int getRows(){
-        return rows;
+    public int getRows(){
+        return this.rows;
     }
 
-    int getCols(){
-        return rows;
+    public int getCols(){
+        return this.cols;
     }
 
-    int getValueOnPosition(int _row, int _col){
+    public int[][] getValues(){
+        return this.matrix;
+    }
+
+    public int getValueOnPosition(int _row, int _col){
         return matrix[_row][_col];
     }
 
-    void add(Matrix matrixToAdd){
+    public void add(Matrix matrixToAdd){
         try{
             if(this.getRows() != matrixToAdd.getRows() || this.getCols() != matrixToAdd.getCols())
                 throw new MatrixException();
@@ -96,7 +113,7 @@ class Matrix {
         }
     }
 
-    void sub(Matrix matrixToSub){
+    public void sub(Matrix matrixToSub){
         try{
             if(this.getRows() != matrixToSub.getRows() || this.getCols() != matrixToSub.getCols())
                 throw new MatrixException();
@@ -110,11 +127,13 @@ class Matrix {
         }
     }
 
-    void mul(Matrix matrixToMul){
+    public void mul(Matrix matrixToMul){
         try{
             if(this.getRows() != matrixToMul.getCols() || this.getCols() != matrixToMul.getRows())
                 throw new MatrixException();
+
             int[][] tmpArray = new int[rows][cols];
+
             for(int i = 0; i < rows; i++){
                 for(int j = 0; j < cols; j++){
                     for(int k = 0; k < cols; k++){
@@ -125,6 +144,8 @@ class Matrix {
             this.copy(tmpArray);
         }catch(MatrixException e) {
             e.printException();
+            DummyMatrix dummyMatrix = new DummyMatrix(this);
+            this.copy(dummyMatrix.mulWrongDimMatrix(matrixToMul));
         }
     }
 }
