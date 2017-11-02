@@ -18,14 +18,12 @@ public class DummyMatrix extends Matrix{
 
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
-                if(i >= matrixToMul.getRows()-1 || j >= matrixToMul.getCols()-1)
-                    mirrorMatrix[i][j] = 0;
+                if(i >= matrixToMul.getRows() || j >= matrixToMul.getCols())
+                    mirrorMatrix[i][j] = 1;
                 else
                     mirrorMatrix[i][j] = matrixToMul.getValueOnPosition(i,j);
             }
         }
-
-        System.out.println(mirrorMatrix[2][2]);
 
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
@@ -34,6 +32,7 @@ public class DummyMatrix extends Matrix{
                 }
             }
         }
+
         return tmpArray;
     }
 }
