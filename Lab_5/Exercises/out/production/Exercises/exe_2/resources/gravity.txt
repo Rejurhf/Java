@@ -197,7 +197,7 @@
 {18391}{18444}Mrs. Brown, brownies. Get it?|[Chuckles]
 {18447}{18494}-Yes! That's good.|-There you go.
 {18497}{18556}-Thank you very much.|-[Chuckles] Did you see the eclipse?
-{18559}{18627}Wasn't it trï¿½s magnifique?
+{18559}{18627}Wasn't it très magnifique?
 {18630}{18684}-Those French tapes are really|paying off, aren't they?|-Oh, you noticed.
 {18687}{18740}-[Chuckles]|Thanks for the brownies, Mrs. Brown.|-[Chuckles]
 {18743}{18827}Oh, Tim.|I wanted to remind you...
