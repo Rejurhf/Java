@@ -1,7 +1,7 @@
 {444}{542}[Man] Mars surface ops,|this is Houston. We're go for data.
 {545}{646}[Man #2] Copy, Houston. Base pedal|temp good. Remote pedal actuator good.
 {649}{755}Probe primary and auxiliary|transponders a-okay.
-{759}{818}Shunt voltage three zero.
+{759}{718}Shunt voltage three zero.
 {821}{940}[Man #1]|D.S.N. uplink rate is now 61.101.
 {943}{992}Copy. We'll see if we|can better that for you.
 {995}{1044}This is the probe's

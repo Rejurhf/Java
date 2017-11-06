@@ -2,7 +2,6 @@ package exe_2.main;
 
 import java.io.*;
 import java.util.LinkedList;
-import java.util.Scanner;
 
 public class DelaySubtitles{
     private static final String pathToRes = "src/exe_2/resources/";
@@ -12,7 +11,7 @@ public class DelaySubtitles{
         int i = 0;
 
         for(String line:subs){
-            String delayedFrames = this.getDelayedFrames(line);
+            String delayedFrames = this.getDelayedFrames(line, delay, fps);
             String sentence = this.getSentence(line);
 
             subs.set(i, delayedFrames + sentence);
@@ -22,15 +21,28 @@ public class DelaySubtitles{
         this.saveDelayedSubs(out, subs);
     }
 
-    private String getDelayedFrames(String line) {
+    private String getDelayedFrames(String line, int delay, int fps) {
         String newFrames;
-        int startFrame, endFrame;
+        int delayValue = delay * fps / 1000;
+        int startFrame = 0, endFrame = 0;
         int firstBracket = line.indexOf('}');
         int secondBracket = line.substring(firstBracket + 1).indexOf("}") + firstBracket + 1;
 
-        startFrame = Integer.parseInt(line.substring(1, firstBracket));
-        endFrame = Integer.parseInt(line.substring(firstBracket + 2, secondBracket));
+        try {
+            startFrame = Integer.parseInt(line.substring(1, firstBracket)) + delayValue;
+            endFrame = Integer.parseInt(line.substring(firstBracket + 2, secondBracket)) + delayValue;
 
+            if(startFrame > endFrame)
+                throw new WrongSequenceExeption();
+        }catch (NumberFormatException e){
+            System.out.println("Wrong format");
+            startFrame = 0;
+            endFrame = 0;
+            e.printStackTrace();
+        }catch (WrongSequenceExeption e){
+            e.printExeption(startFrame, endFrame);
+            endFrame = startFrame + 12;
+        }
         newFrames = "{" + Integer.toString(startFrame) + "}{" + Integer.toString(endFrame) + "}";
 
         return newFrames;
