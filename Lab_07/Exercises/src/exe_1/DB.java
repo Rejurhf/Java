@@ -42,11 +42,12 @@ public class DB{
             stmt = null;
         }
     }
-
+/*
     public void createTable(){
         stmt = conn.createStatement();
         stmt.executeUpdate(
                 "CREATE TABLE tablea1(" + "priKey"
         )
     }
+*/
 }
