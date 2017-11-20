@@ -2,10 +2,10 @@ package exe_4.main;
 
 public class Polibiusz implements Algorithm{
     private static final char[] caseTab = {'a','b','c','d','e',
-                                           'f','g','h','i','k',
-                                           'l','m','n','o','p',
-                                           'q','r','s','t','u',
-                                           'v','w','x','y','z'};
+            'f','g','h','i','k',
+            'l','m','n','o','p',
+            'q','r','s','t','u',
+            'v','w','x','y','z'};
 
     public String crypt(String wordToCrp){
         wordToCrp = wordToCrp.toLowerCase();
@@ -43,3 +43,4 @@ public class Polibiusz implements Algorithm{
         return decrpWord.toString();
     }
 }
+

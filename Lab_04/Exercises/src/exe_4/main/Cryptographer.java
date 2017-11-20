@@ -60,15 +60,15 @@ public class Cryptographer{
     private void saveToFile(String outFileName, String textToSave){
         Scanner scanner = new Scanner(textToSave);
         try{
-           File outFile = new File(pathToResrc + outFileName);
-           FileWriter writeToFile = new FileWriter(outFile);
+            File outFile = new File(pathToResrc + outFileName);
+            FileWriter writeToFile = new FileWriter(outFile);
 
-           writeToFile.flush();
-           while(scanner.hasNextLine()){
-               writeToFile.write(scanner.nextLine());
-               writeToFile.write("\r\n");
-           }
-           writeToFile.close();
+            writeToFile.flush();
+            while(scanner.hasNextLine()){
+                writeToFile.write(scanner.nextLine());
+                writeToFile.write("\r\n");
+            }
+            writeToFile.close();
         }catch(IOException e){e.printStackTrace();}
     }
 }

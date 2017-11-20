@@ -10,9 +10,9 @@ public class ROT11 implements Algorithm{
         for(int i = 0; i < wordToCrp.length(); i++) {
             char ch = wordToCrp.charAt(i);
             if(ch >= 'a' && ch <= 'o') ch += move;
-                else if(ch >= 'A' && ch <= 'O') ch += move;
-                else if(ch >= 'p' && ch <= 'z') ch -= albhbtLen - move;
-                else if(ch >= 'P' && ch <= 'Z') ch -= albhbtLen - move;
+            else if(ch >= 'A' && ch <= 'O') ch += move;
+            else if(ch >= 'p' && ch <= 'z') ch -= albhbtLen - move;
+            else if(ch >= 'P' && ch <= 'Z') ch -= albhbtLen - move;
             crpWord.append(ch);
         }
         return crpWord.toString();
@@ -23,9 +23,9 @@ public class ROT11 implements Algorithm{
         for(int i = 0; i < wordToDecrp.length(); i++){
             char ch = wordToDecrp.charAt(i);
             if(ch >= 'a' && ch <= 'k') ch += albhbtLen - move;
-                else if(ch >= 'A' && ch <= 'K') ch += albhbtLen - move;
-                else if(ch >= 'l' && ch <= 'z') ch -= move;
-                else if(ch >= 'L' && ch <= 'Z') ch -= move;
+            else if(ch >= 'A' && ch <= 'K') ch += albhbtLen - move;
+            else if(ch >= 'l' && ch <= 'z') ch -= move;
+            else if(ch >= 'L' && ch <= 'Z') ch -= move;
             decrpWord.append(ch);
         }
         return decrpWord.toString();

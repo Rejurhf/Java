@@ -1,6 +1,6 @@
 package exe_4.main;
 
-public class CodeMaker{
+public class CodeMaker {
     public static void main(String[] argv){
         Cryptographer crp = new Cryptographer();
         Algorithm rot11 = new ROT11();

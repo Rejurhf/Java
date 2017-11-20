@@ -1,6 +1,6 @@
 package exe_2;
 
-public class ListaPracowników{
+public class ListaPracownikow {
     public static void main(String[] argv){
         Kadry kadra = new Kadry();
         Student s1 = new Student("12345678901", 1500);
