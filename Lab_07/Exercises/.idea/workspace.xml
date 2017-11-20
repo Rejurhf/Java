@@ -38,63 +38,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4506957">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DBApp.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/exe_1/DBApp.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DB.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/exe_1/DB.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="800">
-                  <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-                  <folding>
-                    <marker date="1511122669509" expanded="true" signature="924:1617" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="DB.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/exe_1/DB.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
-                  <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-                  <folding>
-                    <element signature="method#connect#0;class#DB#0" expanded="false" />
-                    <element signature="method#disconnect#0;class#DB#0" expanded="false" />
-                    <element signature="method#listTitles#0;class#DB#0" expanded="false" />
-                    <element signature="method#findByIsbn#0;class#DB#0" expanded="false" />
-                    <marker date="1511122669509" expanded="true" signature="1018:1037" ph="SELECT * FRO... books" />
-                    <marker date="1511122669509" expanded="true" signature="1738:1757" ph="SELECT * FRO... books" />
-                    <marker date="1511122669509" expanded="true" signature="2757:2776" ph="SELECT * FRO... books" />
-                    <marker date="1511122669509" expanded="true" signature="4029:4046" ph="INSERT INTO books... " />
-                    <marker date="1511122669509" expanded="true" signature="4029:4073" ph="INSERT INTO books... " />
-                    <marker date="1511122669509" expanded="true" signature="4029:4107" ph="INSERT INTO books... " />
-                    <marker date="1511122669509" expanded="true" signature="4029:4165" ph="INSERT INTO books... " />
-                    <marker date="1511122669509" expanded="true" signature="4029:4167" ph="INSERT INTO books... " />
-                    <marker date="1511122669509" expanded="true" signature="4774:4820" ph="DELETE FROM " />
-                    <marker date="1511122669509" expanded="true" signature="4979:5027" ph="DELETE FROM " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,7 +105,7 @@
               <item name="Exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercises" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="exe_1" type="462c0819:PsiDirectoryNode" />
+              <item name="exe_2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -312,16 +256,15 @@
       <option name="presentableId" value="Default" />
       <updated>1510666417867</updated>
       <workItem from="1510666425287" duration="3246000" />
-      <workItem from="1511113388904" duration="10581000" />
+      <workItem from="1511113388904" duration="10891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13827000" />
+    <option name="totallyTimeSpent" value="14137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -331,7 +274,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -378,27 +321,53 @@
         <state relative-caret-position="820">
           <caret line="41" column="24" lean-forward="false" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding>
-            <marker date="1511122669509" expanded="true" signature="924:1617" ph="{...}" />
+            <element signature="method#connect#0;class#DB#0" expanded="false" />
+            <element signature="method#disconnect#0;class#DB#0" expanded="false" />
+            <element signature="method#listTitles#0;class#DB#0" expanded="false" />
+            <element signature="method#findByIsbn#0;class#DB#0" expanded="false" />
+            <marker date="1511122669509" expanded="true" signature="1018:1037" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="1738:1757" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="2757:2776" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="4029:4046" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4073" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4107" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4165" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4167" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4774:4820" ph="DELETE FROM " />
+            <marker date="1511122669509" expanded="true" signature="4979:5027" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Start Page.url" />
-    <entry file="file://$PROJECT_DIR$/src/exe_1/DB.java">
+    <entry file="file://$PROJECT_DIR$/src/exe_1/DBApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-          <folding>
-            <marker date="1511122669509" expanded="true" signature="924:1617" ph="{...}" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exe_1/DBApp.java">
+    <entry file="file://$PROJECT_DIR$/src/exe_1/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="291">
+          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+          <folding>
+            <element signature="method#connect#0;class#DB#0" expanded="false" />
+            <element signature="method#disconnect#0;class#DB#0" expanded="false" />
+            <element signature="method#listTitles#0;class#DB#0" expanded="false" />
+            <element signature="method#findByIsbn#0;class#DB#0" expanded="false" />
+            <marker date="1511122669509" expanded="true" signature="1018:1037" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="1738:1757" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="2757:2776" ph="SELECT * FRO... books" />
+            <marker date="1511122669509" expanded="true" signature="4029:4046" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4073" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4107" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4165" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4029:4167" ph="INSERT INTO books... " />
+            <marker date="1511122669509" expanded="true" signature="4774:4820" ph="DELETE FROM " />
+            <marker date="1511122669509" expanded="true" signature="4979:5027" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
