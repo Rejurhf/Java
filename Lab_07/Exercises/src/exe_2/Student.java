@@ -4,6 +4,7 @@ public class Student extends Pracownik {
     public Student(String pesel, double wynagrodzenie){
         this.pesel = pesel;
         this.wynBrutto = wynagrodzenie;
+        position = "Student";
     }
 
     public double obliczWynNetto(){

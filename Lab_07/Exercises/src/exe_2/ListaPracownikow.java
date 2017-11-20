@@ -2,15 +2,15 @@ package exe_2;
 
 public class ListaPracownikow {
     public static void main(String[] argv){
+        DBWorker dbWorker = new DBWorker();
+
         Kadry kadra = new Kadry();
         Student s1 = new Student("12345678901", 1500);
         Student s2 = new Student("23456789012", 2000);
         Student s3 = new Student("34567890123", 2500);
         Student s4 = new Student("45678901234", 3000);
-        PracownikEtatowy p1 = new PracownikEtatowy(
-                "56789012345", 1600);
-        PracownikEtatowy p2 = new PracownikEtatowy(
-                "67890123456", 2100);
+        PracownikEtatowy p1 = new PracownikEtatowy("56789012345", 1600);
+        PracownikEtatowy p2 = new PracownikEtatowy("67890123456", 2100);
 
         kadra.dodajPracownika(s1);
         kadra.dodajPracownika(s2);
@@ -18,7 +18,7 @@ public class ListaPracownikow {
         kadra.dodajPracownika(s4);
         kadra.dodajPracownika(p1);
         kadra.dodajPracownika(p2);
-
+        /*
         System.out.println(kadra.getWynNetto(s4));
         System.out.println(kadra.getWynNetto(p1));
 
@@ -32,9 +32,22 @@ public class ListaPracownikow {
 
         System.out.println("Nieposortowana lista pracowników:");
         kadra.wyswietlKadre();
-
+        */
         System.out.println("Posortowana lista pracowników:");
         kadra.sortKadre();
         kadra.wyswietlKadre();
+        System.out.println();
+
+        dbWorker.connect();
+
+        //dbWorker.insertEmploye(s4.getPesel(), s4.getWynBrutto(), s4.getPosition());
+        //dbWorker.insertEmploye(p1.getPesel(), p1.getWynBrutto(), p1.getPosition());
+        dbWorker.insertEmploye("98765432198", 10000, "Nikt");
+        //dbWorker.insertEmploye(p2.getPesel(), p2.getWynBrutto(), p2.getPosition());
+        dbWorker.showAll();
+        dbWorker.delEmploye("98765432198");
+        dbWorker.showAll();
+
+        dbWorker.disconnect();
     }
 }

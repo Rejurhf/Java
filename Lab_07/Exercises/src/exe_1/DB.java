@@ -62,7 +62,7 @@ public class DB{
                 String title = rs.getString(2);
                 String author = rs.getString(3);
                 String year = rs.getString(4);
-                int addSpace = 31 - title.length();
+
                 System.out.println(isbn + " | " + title + "   |   " + author + "  |  " + year);
             }
             System.out.println();
