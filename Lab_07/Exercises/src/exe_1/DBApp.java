@@ -9,7 +9,7 @@ public class DBApp{
         //data.showAll();
         //data.findByIsbn("Fiodor Dostojewski", 3);
         data.showAll();
-        data.addBook("1234567899277", "Miecz Przeznaczenia",
+        data.addBook("1234567899987", "Miecz Przeznaczenia",
          "Andrzej Sapkowski", 1994);
         data.showAll();
 
