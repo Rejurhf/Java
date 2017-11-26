@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class EchoClient {
-    public static void main(String[] args) throws IOException{
+public class EchoClient2 {
+    public static void main(String[] args) throws IOException {
         Socket echoSocket = null;
         PrintWriter out = null;
         BufferedReader in = null;
@@ -27,14 +27,17 @@ public class EchoClient {
 
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
         String userInput;
+        String inputLine;
 
         System.out.println("Type a message: ");
-        while ((userInput = stdIn.readLine()) != null) {
-            out.println(userInput);
-            if (!userInput.equals("0"))
-                System.out.println("echo: ");
-            else
-                break;
+        while ((inputLine = in.readLine()) != null) {
+            //out.println(userInput);
+            //if (!userInput.equals("0"))
+                System.out.println("echo: " +inputLine);
+                if (in.readLine().equals("0"))
+                    break;
+            //else
+            //    break;
         }
 
         out.close();

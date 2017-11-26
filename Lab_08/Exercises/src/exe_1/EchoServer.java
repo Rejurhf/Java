@@ -17,38 +17,35 @@ public class EchoServer {
             System.exit(-1);
         }
 
-        Socket clientSocket = null;
+        Socket clientSocket1 = null;
+        Socket clientSocket2 = null;
         try {
-            clientSocket = serverSocket.accept();
+            clientSocket1 = serverSocket.accept();
+            clientSocket2 = serverSocket.accept();
         }catch (IOException e){
             System.out.println("Accept failed: 6666");
             System.exit(-1);
         }
-        PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(new InputStreamReader(
-                clientSocket.getInputStream()));
-        BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter out1 = new PrintWriter(clientSocket1.getOutputStream(), true);
+        BufferedReader in1 = new BufferedReader(new InputStreamReader(clientSocket1.getInputStream()));
+        PrintWriter out2 = new PrintWriter(clientSocket2.getOutputStream(), true);
+        BufferedReader in2 = new BufferedReader(new InputStreamReader(clientSocket2.getInputStream()));
         String inputLine;
-        String userInput;
 
-        while (true){
-            if(in.ready()){
-                inputLine = in.readLine()
-                if (inputLine.equals("0"))
-                    break;
-                System.out.println("echo: " + inputLine);
-            }
-            if(stdIn.ready()){
-                userInput = stdIn.readLine();
-                if (userInput.equals("0"))
-                    break;
-                out.println(userInput);
-            }
+        while ((inputLine = in1.readLine()) != null) {
+            if(!inputLine.equals("0")){
+                out1.println(inputLine);
+                out2.println(inputLine);
+            }else
+                break;
         }
 
-        out.close();
-        in.close();
-        clientSocket.close();
+        out1.close();
+        in1.close();
+        clientSocket1.close();
+        out2.close();
+        in2.close();
+        clientSocket2.close();
         serverSocket.close();
     }
 }

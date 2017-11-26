@@ -1,4 +1,4 @@
-{444}{542}[Man] Mars surface ops,|this is Houston. We're go for data.
+{444}{542}[Man] Mars surface ops,|this is Houston. We're go for data.¹æœ³¿Ÿ¯¥ÆŒ ñÑ
 {545}{646}[Man #2] Copy, Houston. Base pedal|temp good. Remote pedal actuator good.
 {649}{755}Probe primary and auxiliary|transponders a-okay.
 {759}{718}Shunt voltage three zero.

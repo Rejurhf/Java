@@ -14,7 +14,9 @@ public class CrosswordMain {
         }
 
         System.out.println(">: Losowe słowo:\n" + crosswordPuzzle.getRandom().getWord());
-        System.out.println(">: Losowe słowo o długości 5:\n" + crosswordPuzzle.getRandom(5).getWord());
-        System.out.println(">: Losowe słowo pasujące do wzorca \"ata\"\n" + crosswordPuzzle.getRandom("ata").getWord());
+        System.out.println(">: Losowe słowo o długości 5:\n" +
+                crosswordPuzzle.getRandom(5).getWord());
+        System.out.println(">: Losowe słowo pasujące do wzorca \"ata\"\n" +
+                crosswordPuzzle.getRandom("ata").getWord());
     }
 }
